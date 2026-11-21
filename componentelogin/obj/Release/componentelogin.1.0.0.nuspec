@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>componentelogin</id>
+    <version>1.0.0</version>
+    <authors>componentelogin</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="23375184c653415e92cae9877dfc0bcdf6407d06" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\bin\Release\net8.0-windows\componentelogin.dll" target="lib\net8.0-windows7.0\componentelogin.dll" />
+  </files>
+</package>

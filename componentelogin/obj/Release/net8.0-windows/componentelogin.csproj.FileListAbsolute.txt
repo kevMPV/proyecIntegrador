@@ -1,0 +1,15 @@
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\bin\Release\net8.0-windows\componentelogin.deps.json
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\bin\Release\net8.0-windows\componentelogin.dll
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\bin\Release\net8.0-windows\componentelogin.pdb
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.Properties.Resources.resources
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.UserControl1.resources
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.csproj.GenerateResource.cache
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.AssemblyInfoInputs.cache
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.AssemblyInfo.cs
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.csproj.CoreCompileInputs.cache
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.sourcelink.json
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.dll
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\refint\componentelogin.dll
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\componentelogin.pdb
+C:\Users\cscto\OneDrive\Documentos\NetCore\componentelogin\obj\Release\net8.0-windows\ref\componentelogin.dll
