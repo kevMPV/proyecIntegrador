@@ -17,12 +17,12 @@ namespace ContactosPlus.Presentation
             InitializeComponent();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void FrmPagos_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FrmPagos_Load(object sender, EventArgs e)
+        private void btnPagar_Click(object sender, EventArgs e)
         {
 
         }

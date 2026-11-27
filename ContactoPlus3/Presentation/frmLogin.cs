@@ -14,10 +14,10 @@ namespace ContactosPlus
 
         private void userControl11_ValidarTexto_1(object sender, string e)
         {
-            this.Hide();
-            frmRegistros obj = new frmRegistros();
+            this.Hide();//oculta la ventana actual
+            frmRegistros obj = new frmRegistros(this);//se crea una instancia de la siguiente ventana
 
-            obj.ShowDialog();
+            obj.ShowDialog();//muestra la segunda ventana en pantalla
 
         }
 

@@ -29,19 +29,24 @@
         private void InitializeComponent()
         {
             lblTitulo = new Label();
-            picAvatar = new PictureBox();
-            lblClienteNombre = new Label();
-            txtMensualidad = new TextBox();
-            txtMetodoPagoHeader = new TextBox();
-            txtMesesHeader = new TextBox();
-            cmbMetodoPago = new ComboBox();
-            cmbMeses = new ComboBox();
-            lblMonto = new Label();
-            txtMonto = new TextBox();
             btnPagar = new Button();
             btnCancelar = new Button();
-            btnGuardar = new Button();
-            ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
+            btnMostrarPagos = new Button();
+            pnlCorreo = new Panel();
+            txtPago = new TextBox();
+            lblIconoCorreo = new Label();
+            lblCorreo = new Label();
+            panel1 = new Panel();
+            label1 = new Label();
+            cbFormaDePago = new ComboBox();
+            label2 = new Label();
+            panel2 = new Panel();
+            txtCantidad = new TextBox();
+            label3 = new Label();
+            lblCantidad = new Label();
+            pnlCorreo.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // lblTitulo
@@ -49,173 +54,189 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Times New Roman", 24F);
             lblTitulo.ForeColor = Color.FromArgb(25, 25, 25);
-            lblTitulo.Location = new Point(45, 38);
+            lblTitulo.Location = new Point(32, 24);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(230, 36);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Pagos de clientes";
-            // 
-            // picAvatar
-            // 
-            picAvatar.BackColor = Color.FromArgb(238, 68, 56);
-            picAvatar.Location = new Point(32, 130);
-            picAvatar.Name = "picAvatar";
-            picAvatar.Size = new Size(96, 96);
-            picAvatar.SizeMode = PictureBoxSizeMode.Zoom;
-            picAvatar.TabIndex = 1;
-            picAvatar.TabStop = false;
-            // 
-            // lblClienteNombre
-            // 
-            lblClienteNombre.AutoSize = true;
-            lblClienteNombre.Font = new Font("Times New Roman", 14.25F);
-            lblClienteNombre.ForeColor = Color.FromArgb(30, 30, 30);
-            lblClienteNombre.Location = new Point(142, 138);
-            lblClienteNombre.Name = "lblClienteNombre";
-            lblClienteNombre.Size = new Size(110, 21);
-            lblClienteNombre.TabIndex = 2;
-            lblClienteNombre.Text = "Alexei Garcia";
-            // 
-            // txtMensualidad
-            // 
-            txtMensualidad.BackColor = Color.White;
-            txtMensualidad.BorderStyle = BorderStyle.FixedSingle;
-            txtMensualidad.Font = new Font("Segoe UI", 11F);
-            txtMensualidad.ForeColor = Color.FromArgb(40, 40, 40);
-            txtMensualidad.Location = new Point(135, 185);
-            txtMensualidad.Name = "txtMensualidad";
-            txtMensualidad.ReadOnly = true;
-            txtMensualidad.Size = new Size(138, 27);
-            txtMensualidad.TabIndex = 3;
-            txtMensualidad.Text = " Mensualidad";
-            // 
-            // txtMetodoPagoHeader
-            // 
-            txtMetodoPagoHeader.BackColor = Color.White;
-            txtMetodoPagoHeader.BorderStyle = BorderStyle.FixedSingle;
-            txtMetodoPagoHeader.Font = new Font("Segoe UI", 11F);
-            txtMetodoPagoHeader.ForeColor = Color.FromArgb(40, 40, 40);
-            txtMetodoPagoHeader.Location = new Point(293, 188);
-            txtMetodoPagoHeader.Name = "txtMetodoPagoHeader";
-            txtMetodoPagoHeader.ReadOnly = true;
-            txtMetodoPagoHeader.Size = new Size(178, 27);
-            txtMetodoPagoHeader.TabIndex = 4;
-            txtMetodoPagoHeader.Text = " Metodo de Pago";
-            // 
-            // txtMesesHeader
-            // 
-            txtMesesHeader.BackColor = Color.White;
-            txtMesesHeader.BorderStyle = BorderStyle.FixedSingle;
-            txtMesesHeader.Font = new Font("Segoe UI", 11F);
-            txtMesesHeader.ForeColor = Color.FromArgb(40, 40, 40);
-            txtMesesHeader.Location = new Point(502, 188);
-            txtMesesHeader.Name = "txtMesesHeader";
-            txtMesesHeader.ReadOnly = true;
-            txtMesesHeader.Size = new Size(178, 27);
-            txtMesesHeader.TabIndex = 5;
-            txtMesesHeader.Text = " Meses";
-            // 
-            // cmbMetodoPago
-            // 
-            cmbMetodoPago.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbMetodoPago.Font = new Font("Segoe UI", 11F);
-            cmbMetodoPago.FormattingEnabled = true;
-            cmbMetodoPago.Items.AddRange(new object[] { "tarjeta", "efectivo", "transferencia" });
-            cmbMetodoPago.Location = new Point(293, 228);
-            cmbMetodoPago.Name = "cmbMetodoPago";
-            cmbMetodoPago.Size = new Size(178, 28);
-            cmbMetodoPago.TabIndex = 6;
-            // 
-            // cmbMeses
-            // 
-            cmbMeses.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbMeses.Font = new Font("Segoe UI", 11F);
-            cmbMeses.FormattingEnabled = true;
-            cmbMeses.Items.AddRange(new object[] { "1", "3", "6", "12" });
-            cmbMeses.Location = new Point(496, 228);
-            cmbMeses.Name = "cmbMeses";
-            cmbMeses.Size = new Size(178, 28);
-            cmbMeses.TabIndex = 7;
-            // 
-            // lblMonto
-            // 
-            lblMonto.AutoSize = true;
-            lblMonto.Font = new Font("Times New Roman", 17.25F);
-            lblMonto.ForeColor = Color.FromArgb(20, 20, 20);
-            lblMonto.Location = new Point(344, 286);
-            lblMonto.Name = "lblMonto";
-            lblMonto.Size = new Size(73, 26);
-            lblMonto.TabIndex = 8;
-            lblMonto.Text = "Monto";
-            // 
-            // txtMonto
-            // 
-            txtMonto.BackColor = Color.FromArgb(236, 236, 236);
-            txtMonto.BorderStyle = BorderStyle.FixedSingle;
-            txtMonto.Font = new Font("Segoe UI", 11.5F);
-            txtMonto.ForeColor = Color.FromArgb(135, 135, 135);
-            txtMonto.Location = new Point(482, 282);
-            txtMonto.Name = "txtMonto";
-            txtMonto.ReadOnly = true;
-            txtMonto.Size = new Size(178, 28);
-            txtMonto.TabIndex = 9;
-            txtMonto.Text = " $300";
             // 
             // btnPagar
             // 
             btnPagar.BackColor = Color.FromArgb(245, 245, 245);
             btnPagar.Font = new Font("Times New Roman", 13.5F);
             btnPagar.ForeColor = Color.FromArgb(25, 25, 25);
-            btnPagar.Location = new Point(242, 355);
+            btnPagar.Location = new Point(111, 400);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(114, 30);
             btnPagar.TabIndex = 10;
             btnPagar.Text = "pagar";
             btnPagar.UseVisualStyleBackColor = false;
+            btnPagar.Click += btnPagar_Click;
             // 
             // btnCancelar
             // 
             btnCancelar.BackColor = Color.FromArgb(245, 245, 245);
             btnCancelar.Font = new Font("Times New Roman", 13.5F);
             btnCancelar.ForeColor = Color.FromArgb(25, 25, 25);
-            btnCancelar.Location = new Point(378, 355);
+            btnCancelar.Location = new Point(249, 400);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(108, 30);
+            btnCancelar.Size = new Size(111, 30);
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "canselar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // btnGuardar
+            // btnMostrarPagos
             // 
-            btnGuardar.BackColor = Color.FromArgb(245, 245, 245);
-            btnGuardar.Font = new Font("Times New Roman", 13.5F);
-            btnGuardar.ForeColor = Color.FromArgb(25, 25, 25);
-            btnGuardar.Location = new Point(514, 355);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(108, 30);
-            btnGuardar.TabIndex = 12;
-            btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = false;
-            btnGuardar.Click += btnGuardar_Click;
+            btnMostrarPagos.BackColor = Color.FromArgb(245, 245, 245);
+            btnMostrarPagos.Font = new Font("Times New Roman", 13.5F);
+            btnMostrarPagos.ForeColor = Color.FromArgb(25, 25, 25);
+            btnMostrarPagos.Location = new Point(386, 400);
+            btnMostrarPagos.Name = "btnMostrarPagos";
+            btnMostrarPagos.Size = new Size(147, 30);
+            btnMostrarPagos.TabIndex = 12;
+            btnMostrarPagos.Text = "Mostrar Pagos";
+            btnMostrarPagos.UseVisualStyleBackColor = false;
+            // 
+            // pnlCorreo
+            // 
+            pnlCorreo.BackColor = Color.White;
+            pnlCorreo.BorderStyle = BorderStyle.FixedSingle;
+            pnlCorreo.Controls.Add(txtPago);
+            pnlCorreo.Controls.Add(lblIconoCorreo);
+            pnlCorreo.Location = new Point(32, 135);
+            pnlCorreo.Name = "pnlCorreo";
+            pnlCorreo.Size = new Size(535, 38);
+            pnlCorreo.TabIndex = 14;
+            // 
+            // txtPago
+            // 
+            txtPago.BorderStyle = BorderStyle.None;
+            txtPago.Font = new Font("Segoe UI", 10F);
+            txtPago.Location = new Point(45, 9);
+            txtPago.Name = "txtPago";
+            txtPago.Size = new Size(478, 18);
+            txtPago.TabIndex = 1;
+            // 
+            // lblIconoCorreo
+            // 
+            lblIconoCorreo.AutoSize = true;
+            lblIconoCorreo.Font = new Font("Segoe UI Symbol", 11F);
+            lblIconoCorreo.ForeColor = Color.DimGray;
+            lblIconoCorreo.Location = new Point(8, 7);
+            lblIconoCorreo.Name = "lblIconoCorreo";
+            lblIconoCorreo.Size = new Size(24, 20);
+            lblIconoCorreo.TabIndex = 0;
+            lblIconoCorreo.Text = "✉";
+            // 
+            // lblCorreo
+            // 
+            lblCorreo.AutoSize = true;
+            lblCorreo.Font = new Font("Segoe UI", 10F);
+            lblCorreo.ForeColor = Color.FromArgb(45, 45, 45);
+            lblCorreo.Location = new Point(32, 108);
+            lblCorreo.Name = "lblCorreo";
+            lblCorreo.Size = new Size(109, 19);
+            lblCorreo.TabIndex = 13;
+            lblCorreo.Text = "1.Fecha de Pago";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(cbFormaDePago);
+            panel1.Location = new Point(32, 233);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(535, 38);
+            panel1.TabIndex = 16;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Symbol", 11F);
+            label1.ForeColor = Color.DimGray;
+            label1.Location = new Point(8, 7);
+            label1.Name = "label1";
+            label1.Size = new Size(24, 20);
+            label1.TabIndex = 0;
+            label1.Text = "✉";
+            // 
+            // cbFormaDePago
+            // 
+            cbFormaDePago.FormattingEnabled = true;
+            cbFormaDePago.Location = new Point(54, 7);
+            cbFormaDePago.Name = "cbFormaDePago";
+            cbFormaDePago.Size = new Size(462, 23);
+            cbFormaDePago.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F);
+            label2.ForeColor = Color.FromArgb(45, 45, 45);
+            label2.Location = new Point(32, 206);
+            label2.Name = "label2";
+            label2.Size = new Size(115, 19);
+            label2.TabIndex = 15;
+            label2.Text = "2.Forma De Pago";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(txtCantidad);
+            panel2.Controls.Add(label3);
+            panel2.Location = new Point(32, 320);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(535, 38);
+            panel2.TabIndex = 18;
+            // 
+            // txtCantidad
+            // 
+            txtCantidad.BorderStyle = BorderStyle.None;
+            txtCantidad.Font = new Font("Segoe UI", 10F);
+            txtCantidad.Location = new Point(38, 9);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(485, 18);
+            txtCantidad.TabIndex = 2;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Symbol", 11F);
+            label3.ForeColor = Color.DimGray;
+            label3.Location = new Point(8, 7);
+            label3.Name = "label3";
+            label3.Size = new Size(24, 20);
+            label3.TabIndex = 0;
+            label3.Text = "✉";
+            // 
+            // lblCantidad
+            // 
+            lblCantidad.AutoSize = true;
+            lblCantidad.Font = new Font("Segoe UI", 10F);
+            lblCantidad.ForeColor = Color.FromArgb(45, 45, 45);
+            lblCantidad.Location = new Point(32, 289);
+            lblCantidad.Name = "lblCantidad";
+            lblCantidad.Size = new Size(75, 19);
+            lblCantidad.TabIndex = 17;
+            lblCantidad.Text = "3.Cantidad";
             // 
             // FrmPagos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(239, 236, 230);
-            ClientSize = new Size(735, 425);
-            Controls.Add(btnGuardar);
+            ClientSize = new Size(588, 458);
+            Controls.Add(lblCantidad);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(label2);
+            Controls.Add(pnlCorreo);
+            Controls.Add(lblCorreo);
+            Controls.Add(btnMostrarPagos);
             Controls.Add(btnCancelar);
             Controls.Add(btnPagar);
-            Controls.Add(txtMonto);
-            Controls.Add(lblMonto);
-            Controls.Add(cmbMeses);
-            Controls.Add(cmbMetodoPago);
-            Controls.Add(txtMesesHeader);
-            Controls.Add(txtMetodoPagoHeader);
-            Controls.Add(txtMensualidad);
-            Controls.Add(lblClienteNombre);
-            Controls.Add(picAvatar);
             Controls.Add(lblTitulo);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -223,7 +244,12 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pagos de clientes";
             Load += FrmPagos_Load;
-            ((System.ComponentModel.ISupportInitialize)picAvatar).EndInit();
+            pnlCorreo.ResumeLayout(false);
+            pnlCorreo.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,17 +257,20 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.PictureBox picAvatar;
-        private System.Windows.Forms.Label lblClienteNombre;
-        private System.Windows.Forms.TextBox txtMensualidad;
-        private System.Windows.Forms.TextBox txtMetodoPagoHeader;
-        private System.Windows.Forms.TextBox txtMesesHeader;
-        private System.Windows.Forms.ComboBox cmbMetodoPago;
-        private System.Windows.Forms.ComboBox cmbMeses;
-        private System.Windows.Forms.Label lblMonto;
-        private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnMostrarPagos;
+        private Panel pnlCorreo;
+        private TextBox txtPago;
+        private Label lblIconoCorreo;
+        private Label lblCorreo;
+        private Panel panel1;
+        private Label label1;
+        private Label label2;
+        private ComboBox cbFormaDePago;
+        private Panel panel2;
+        private TextBox txtCantidad;
+        private Label label3;
+        private Label lblCantidad;
     }
 }
